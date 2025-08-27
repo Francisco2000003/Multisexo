@@ -226,12 +226,3 @@ export default function Home() {
   );
 }
 
-// ————— Helpers
-function buildImageUrl(path?: string | null) {
-  if (!path) return "/fallback-service.jpg";
-  // si ya es absoluta, regresa igual
-  if (/^https?:\/\//i.test(path)) return path;
-  // si tu serializer devuelve "/media/..." esto la hace absoluta:
-  const BACKEND_BASE = (import.meta.env.VITE_BACKEND_BASE as string) || "http://127.0.0.1:8000";
-  return `${BACKEND_BASE}${path.startsWith("/") ? path : `/${path}`}`;
-}
