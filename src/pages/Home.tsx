@@ -27,8 +27,8 @@ type Servicio = {
 const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000/api";
 
 export default function Home() {
-  const [servicios, setServicios] = useState<Servicio[]>([]);
-  const [cargando, setCargando] = useState(true);
+  const [_servicios, setServicios] = useState<Servicio[]>([]);
+  const [_cargando, setCargando] = useState(true);
 
   useEffect(() => {
     (async () => {
@@ -225,4 +225,5 @@ export default function Home() {
     </main>
   );
 }
+
 
