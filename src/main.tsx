@@ -9,7 +9,6 @@ import ServicioDetalle from "./pages/ServicioDetalle";
 import Nosotros from "./pages/nosotros";
 import Contacto from "./pages/contacto";
 import NotFound from "./pages/NotFound";
-import App from './App'
 import "./index.css";
 
 const router = createBrowserRouter([
