@@ -22,7 +22,7 @@ export default function Servicios() {
   const [error, setError] = useState<string | null>(null);
 
   const [q, setQ] = useState("");
-  const [cat, setCat] = useState<string | null>(null);
+  const [cat] = useState<string | null>(null);
   const [sort, setSort] = useState<"az" | "za">("az");
 
   useEffect(() => {

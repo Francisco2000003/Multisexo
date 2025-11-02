@@ -1,6 +1,4 @@
 // components/UniformGallery.tsx
-import React from "react";
-
 type ImgItem = {
   src: string;
   alt?: string;

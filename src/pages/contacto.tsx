@@ -56,8 +56,6 @@ export default function Contacto() {
     return Object.keys(e).length === 0;
   };
 
-  // al inicio del archivo:
-const API = "http://127.0.0.1:8000";  // ajusta si usas otra base
 
 // dentro de Contacto():
 const onSubmit = async (ev: React.FormEvent) => {
