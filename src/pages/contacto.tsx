@@ -57,7 +57,7 @@ export default function Contacto() {
   };
 
   // al inicio del archivo:
-const API = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";  // ajusta si usas otra base
+const API = "http://127.0.0.1:8000";  // ajusta si usas otra base
 
 // dentro de Contacto():
 const onSubmit = async (ev: React.FormEvent) => {
