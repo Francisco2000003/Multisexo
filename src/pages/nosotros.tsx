@@ -191,42 +191,7 @@ function Lightbox({
     </div>
   );
 }
-/* =========================
-   GALERÍA MASONRY (nuevo diseño)
-   ========================= */
-function MasonryGallery({
-  images,
-  onOpen,
-}: {
-  images: { src: string; alt: string }[];
-  onOpen: (i: number) => void;
-}) {
-  return (
-    <div className="mt-8 [column-fill:_balance] columns-1 sm:columns-2 lg:columns-3 gap-4">
-      {images.map((img, i) => (
-        <div key={img.src + i} className="mb-4 break-inside-avoid">
-          <button
-            onClick={() => onOpen(i)}
-            className="group block w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 ring-1 ring-white/5 hover:ring-white/10"
-            aria-label={`Abrir ${img.alt}`}
-          >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="h-auto w-full object-cover transition duration-500 ease-out group-hover:scale-[1.03] group-hover:brightness-[0.95]"
-              loading="lazy"
-              decoding="async"
-            />
-            <div className="flex items-center justify-between px-3 py-2 text-left">
-              <span className="text-[13px] font-medium text-slate-100">{img.alt}</span>
-              <span className="rounded-full bg-white/10 px-2 py-0.5 text-[11px] text-white">Ver</span>
-            </div>
-          </button>
-        </div>
-      ))}
-    </div>
-  );
-}
+
 
 /* =========================
    PÁGINA
